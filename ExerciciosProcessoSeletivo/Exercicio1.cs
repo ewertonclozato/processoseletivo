@@ -29,8 +29,17 @@ namespace ExerciciosProcessoSeletivo
                 ("Otto", 9, false),
             };
 
+            foreach (var func in funcionariosBancoDedados)
+            {
+                while (func.excluido == true)
+                {
+                    funcionariosAtivos.Add(func);
+                    break;
+                }
+            }
+
             //DICA USE A CLAUSULA WHERE(funcionario => funcionario)
-            funcionariosAtivos = funcionariosBancoDedados;
+            
 
             return funcionariosAtivos;
         }

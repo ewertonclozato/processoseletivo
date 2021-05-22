@@ -15,8 +15,7 @@ namespace ExerciciosProcessoSeletivo
         /// <returns></returns>
         internal List<int> GetCodigosOrdenados(List<int> codigos)
         {
-
-
+            codigos = codigos.OrderBy(c => c).ToList();
             return codigos;
         }
 

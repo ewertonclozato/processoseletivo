@@ -18,7 +18,7 @@ namespace ExerciciosProcessoSeletivo
             var data = DateTime.Now;
 
 
-            var clausula = "O FUNCIONÁRIO {nome.ToUpper()} É CONTRATADO PELA EMPRESA YPSUM\nPARA PRESTAR SERVIÇOS DE PROGRAMADOR {data}";
+            var clausula = string.Format("O FUNCIONÁRIO {0} É CONTRATADO PELA EMPRESA YPSUM\nPARA PRESTAR SERVIÇOS DE PROGRAMADOR {1}", nome.ToUpper(), data);
 
             return clausula;
         }
